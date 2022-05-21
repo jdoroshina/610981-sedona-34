@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Каталог</title>
   </head>
   <body>
     <header class="page-header">
@@ -38,6 +38,65 @@
         </ul>
       </nav>
     </header>
+    <main class="main-catalog">
+      <h1 class="catalog-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Гостиницы</span>
+          </a>
+        </li>
+      </ul>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <input class="control-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+              <label class="control-title" for="swimming-pool">Бассейн</label>
+            </li>
+            <li class="catalog-filter-item">
+              <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+              <label class="control-title" for="parking">Парковка</label>
+            </li>
+            <li class="catalog-filter-item">
+              <input class="control-input" type="checkbox" name="wifi" id="wifi">
+              <label class="control-title" for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип Жилья:</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="accomodation-type" value="Гостиница" id="hotel">
+              <label class="control-title" for="hotel">Гостиница</label>
+            </li>
+            <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="accomodation-type" value="Мотель" id="motel">
+              <label class="control-title" for="motel">Мотель</label>
+            </li>
+            <li class="catalog-filter-item">
+              <input class="control-input" type="radio" name="accomodation-type" value="Аппартаменты" id="appartments">
+              <label class="control-title" for="appartments">Аппартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button catalog-button" type="submit">Применить</button>
+          <!-- не очень поняла почему в примере Барбершопа аналогичная кнопка в форме размечен <button>, а не <a>. Ведь применение фильтра по факту открывает новую страницу с измененной выдачей (мы делали такое раньше в разметке и это объяснялось подстраховкой на случай если не сработает JS) -->
+        <button class="button catalog-button" type="reset">Сбросить</button>
+      </form>
+      <section class="hotels">
+        <span class="hotels-count">Найдено гостиниц: 38</span>
+        <span class="hotels-sorting">Сначала Дешевые</span>
+        <ul class="hotels-"></ul>
+      </section>
+    </main>
     <footer class="page-footer">
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
