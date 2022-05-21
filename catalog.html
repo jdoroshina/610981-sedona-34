@@ -88,13 +88,34 @@
           </ul>
         </fieldset>
         <button class="button catalog-button" type="submit">Применить</button>
-          <!-- не очень поняла почему в примере Барбершопа аналогичная кнопка в форме размечен <button>, а не <a>. Ведь применение фильтра по факту открывает новую страницу с измененной выдачей (мы делали такое раньше в разметке и это объяснялось подстраховкой на случай если не сработает JS) -->
+          <!-- не поняла почему в примере Барбершопа аналогичная кнопка в форме размечен <button>, а не <a>. Ведь применение фильтра по факту открывает новую страницу с измененной выдачей (мы делали такое раньше в разметке и это объяснялось подстраховкой на случай если не сработает JS) -->
         <button class="button catalog-button" type="reset">Сбросить</button>
       </form>
-      <section class="hotels">
-        <span class="hotels-count">Найдено гостиниц: 38</span>
-        <span class="hotels-sorting">Сначала Дешевые</span>
-        <ul class="hotels-"></ul>
+      <section class="catalog-hotels">
+        <h2 class="catalog-hotels-title">Найдено гостиниц: 38</h2>
+        <select class="catalog-sorter-select" aria-label="Сортировка">
+          <option value="Сначала дешёвые" selected>Сначала дешёвые</option>
+        </select>
+        <ul class="card-size-list">
+          <li class="card-size-item">
+            <a class="card-size-link card-size-link-current" href="#">
+              <span class="visually-hidden">Показать как карточки</span>
+            </a>
+          </li>
+          <li class="card-size-item">
+            <a class="card-size-link" href="#">
+              <span class="visually-hidden">Показать как галерею</span>
+            </a>
+          </li>
+          <li class="card-size-item">
+            <a class="card-size-link" href="#">
+              <span class="visually-hidden">Показать как список</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="hotels-list">
+          <li class="hotels-list-item"></li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">
